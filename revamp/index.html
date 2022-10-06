@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax_App</title>
+
+  <!-- Google fonts -->
+
+  <!-- Bootstrap links -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="TaxManager.css">
+
+</head>
+<body>
+  <header>
+    <nav class="nav_bar">
+      <img src="image/logo.png" alt="Natujenge logo" class="logo">
+      <h2 class="title">Natujenge OYF Tax App</h2>
+      <a href="https://www.meliora.co.ke/articles/nvrjgtnsgh5ophs6mm" class="bootcamp_link">OYF page</a>
+    </nav>
+  </header>
+
+  <main class="main_page">
+
+    <!-- App section with tabs -->
+    <article class="tax_manager">
+      
+      <!-- Tab header using bootstrap -->
+      <section class="tabs_header"> <!-- called links -->
+        <ul class="tab_pills">
+          <li class="tabs active"><a data-toggle="tab" href="#tax-manager" class="tab_titles">Tax Manager</a></li>
+          <li class="tabs"><a data-toggle="tab" href="#bill-manager" class="tab_titles">Bill Manager</a></li>
+          <li class="tabs"><a data-toggle="tab" href="#team-members" class="tab_titles">Team Members</a></li>
+        </ul>
+      </section>
+
+      <!-- Tab Content -->
+      <section class="tab_content">
+
+        <!-- Tax manager content -->
+        <div id="tax-manager" class="tax_manager">
+          <form action="" class="tax_form" method="get">
+
+            <!-- Salary input -->
+            <div class="gross_salary_content">
+              <label for="salary_input" class="gross_label">Gross salary</label>
+              <input type="text" name="gross salary" class="salary_input" placeholder="Ksh 50000">
+              <button type="submit" class="gross_button" id="gross_enter">enter</button>
+            </div>
+
+            <!-- Netpay display -->
+            <div class="Net_Pay_content">
+              <label for="" class="Net_Pay_label">Net pay</label>
+              <!-- TODO: net pay display -->
+            </div>
+
+            <!-- tax items in form -->
+            <ul class="tax_items">
+              <li>
+                <label for="nssf" class="tax_item_label">NSSF Contribution</label>
+                <input type="text" class="tax_item_input" name="nssf" placeholder="ksh" id=" nssf">
+              </li>
+              <li>
+                <label for="paye" class="tax_item_label">PAYE</label>
+                <input type="text" class="tax_item_input" name="paye" placeholder="ksh" id=" paye">
+              </li>
+              <li>
+                <label for="relief" class="tax_item_label">Tax Relief</label>
+                <input type="text" class="tax_item_input" name="relief" placeholder="ksh" id=" relief">
+              </li>
+              <li>
+                <label for="personal" class="tax_item_label">Personal Relief</label>
+                <input type="text" class="tax_item_input" name="personal" placeholder="ksh" id=" personal">
+              </li>
+              <li>
+                <label for="nhif" class="tax_item_label">NHIF</label>
+                <input type="text" class="tax_item_input" name="nhif" placeholder="ksh" id=" nhif">
+              </li>
+              
+            </ul>
+
+          </form>
+        </div>
+
+        <!-- Bill manager content -->
+        <div id="bill-manager" class="bill_manager">
+          <form action="" class="bill_form">
+
+            <!-- Display changing net pay -->
+            <div class="net_pay">
+              <label for="net_pay" class="bill_net_pay_label">Current Net Pay</label>
+              <!-- TODO: Display Net pay -->
+            </div>
+
+            <!-- Bill items -->
+            <div class="new_bill">
+              <input type="text" name="bill_item_name" id="bill-name" placeholder="name">
+              <input type="tel" name="bill_item_amount" id="bill-amount" placeholder="ksh">
+              <button type="submit" class="bill_item_add" id="bill_item_add">Add Item</button>
+            </div>
+
+
+
+          </form>
+        </div>
+      </section>
+      
+    </article>
+
+  </main>
+
+</body>
+</html>
